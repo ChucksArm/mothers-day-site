@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: linear-gradient(135deg, #fff5f7 0%, #ffe0ec 100%);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar {
+  background: linear-gradient(135deg, #ff69b4 0%, #ff1493 100%);
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.hero {
+  background: linear-gradient(135deg, #ff69b4 0%, #ff1493 100%);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  opacity: 0.95;
+}
+
+.cta-btn {
+  background: white;
+  color: #ff1493;
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.features {
+  padding: 80px 0;
+  background: white;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.feature-card {
+  background: #f8f9fa;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(255,105,180,0.2);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  color: #ff1493;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.messages-section {
+  padding: 80px 0;
+  background: white;
+}
+
+.messages-section h2 {
+  text-align: center;
+  color: #ff1493;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  max-width: 500px;
+  margin: 0 auto 30px;
+  flex-wrap: wrap;
+}
+
+.input-field {
+  flex: 1;
+  min-width: 200px;
+  padding: 15px;
+  border: 2px solid #ff69b4;
+  border-radius: 50px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #ff1493;
+  box-shadow: 0 0 10px rgba(255,105,180,0.3);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #ff69b4 0%, #ff1493 100%);
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(255,105,180,0.4);
+}
+
+.message-card {
+  background: linear-gradient(135deg, #fff5f7 0%, #ffe0ec 100%);
+  border-left: 4px solid #ff1493;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+  font-style: italic;
+  line-height: 1.8;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.testimonials {
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+
+.testimonials h2 {
+  text-align: center;
+  color: #ff1493;
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-top: 4px solid #ff69b4;
+}
+
+.testimonial-card p {
+  margin-bottom: 15px;
+  line-height: 1.8;
+  color: #555;
+}
+
+.testimonial-card strong {
+  color: #ff1493;
+}
+
+.footer {
+  background: linear-gradient(135deg, #ff69b4 0%, #ff1493 100%);
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .feature-grid,
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .input-group {
+    flex-direction: column;
+  }
+}
