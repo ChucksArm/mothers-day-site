@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Mother's Day | Celebrate Your Mom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">❤️ Mother's Day Celebration</h1>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Happy Mother's Day!</h1>
+            <p>Celebrating the incredible women who shaped our lives</p>
+            <button class="cta-btn" onclick="scrollToSection('messages')">Share Your Message</button>
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="container">
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🌹</div>
+                    <h3>Beautiful Tributes</h3>
+                    <p>Create heartfelt messages for the special mothers in your life</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎁</div>
+                    <h3>Gift Ideas</h3>
+                    <p>Discover thoughtful gift suggestions for every mom</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📸</div>
+                    <h3>Share Memories</h3>
+                    <p>Celebrate your favorite memories with photos and stories</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="messages" class="messages-section">
+        <div class="container">
+            <h2>Personalized Messages</h2>
+            <div class="input-group">
+                <input type="text" id="momName" placeholder="Enter your mom's name..." class="input-field">
+                <button onclick="generateMessage()" class="btn-primary">Generate Message</button>
+            </div>
+            <div id="message-output" class="message-card" style="display:none;">
+                <p id="generated-message"></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>What People Are Saying</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p>"This site helped me express my feelings to my amazing mom!"</p>
+                    <strong>- Sarah M.</strong>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The gift ideas were perfect! My mom loved everything!"</p>
+                    <strong>- John D.</strong>
+                </div>
+                <div class="testimonial-card">
+                    <p>"A beautiful way to celebrate and honor our mothers."</p>
+                    <strong>- Emily R.</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Made with ❤️ to celebrate mothers everywhere | © 2026 Mother's Day Celebration</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
