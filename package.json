@@ -1,0 +1,13 @@
+{
+  "name": "mothers-day-site",
+  "version": "1.0.0",
+  "description": "A beautiful Mother's Day website",
+  "main": "index.js",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000"
+  },
+  "keywords": ["mothers-day", "celebration"],
+  "author": "",
+  "license": "ISC"
+}
